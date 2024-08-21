@@ -16,7 +16,7 @@ btnNorte.addEventListener('click', () => {
     if(estadoAtual[0].norte){
         capi.posicao = estadoAtual[0].norte;
         capiIMG.style.top = `${proxEstado[0].top}px`
-        capiIMG.style.left = `${proxEstado[0].left}px`
+        capiIMG.style.right = `${proxEstado[0].right}px`
     }
 });
 
@@ -28,7 +28,7 @@ btnSul.addEventListener('click', () => {
     if(estadoAtual[0].sul){
         capi.posicao = estadoAtual[0].sul;
         capiIMG.style.top = `${proxEstado[0].top}px`
-        capiIMG.style.left = `${proxEstado[0].left}px`
+        capiIMG.style.right = `${proxEstado[0].right}px`
     }
 });
 
@@ -40,7 +40,7 @@ btnLeste.addEventListener('click', () => {
     if(estadoAtual[0].leste){
         capi.posicao = estadoAtual[0].leste;
         capiIMG.style.top = `${proxEstado[0].top}px`
-        capiIMG.style.left = `${proxEstado[0].left}px`
+        capiIMG.style.right = `${proxEstado[0].right}px`
     }
 });
 
@@ -52,7 +52,7 @@ btnOeste.addEventListener('click', () => {
     if(estadoAtual[0].oeste){
         capi.posicao = estadoAtual[0].oeste;
         capiIMG.style.top = `${proxEstado[0].top}px`
-        capiIMG.style.left = `${proxEstado[0].left}px`
+        capiIMG.style.right = `${proxEstado[0].right}px`
     }
 });
 
@@ -68,8 +68,8 @@ const estados = [
         nordeste : null,
         sudeste : null,
         sudoeste : null,
-        top : 522,
-        left : 295
+        top : 492,
+        right : 315
     },
     {
         sigla : "SC",
@@ -81,8 +81,8 @@ const estados = [
         nordeste : null,
         sudeste : null,
         sudoeste : null,
-        top : 488, 
-        left : 251
+        top : 464, 
+        right : 269
     },
     {
         sigla : "PR",
@@ -94,21 +94,21 @@ const estados = [
         nordeste : null,
         sudeste : "SP",
         sudoeste : "MS",
-        top : 449, 
-        left : 275
+        top : 432, 
+        right : 300
     },
     {
         sigla : "SP",
         norte : "MG",
         sul : "PR",
-        leste : "MS",
-        oeste : "RJ",
+        leste : "RJ",
+        oeste : "MS",
         noroeste : null,
         nordeste : null,
         sudeste : "MG",
         sudoeste : "MS",
-        top : 408, 
-        left : 238
+        top : 403, 
+        right : 264
     },
     {
         sigla : "MG",
@@ -120,8 +120,8 @@ const estados = [
         nordeste : "BA",
         sudeste : "SP",
         sudoeste : "RJ",
-        top : 352, 
-        left : 174
+        top : 364, 
+        right : 215
     },
     {
         sigla : "ES",
@@ -133,8 +133,8 @@ const estados = [
         nordeste : null,
         sudeste : null,
         sudoeste : "MG",
-        top : 386, 
-        left : 115
+        top : 380, 
+        right : 150
     },
     {
         sigla : "RJ",
@@ -146,8 +146,8 @@ const estados = [
         nordeste : null,
         sudeste : null,
         sudoeste : "SP",
-        top : 418, 
-        left : 150
+        top : 423, 
+        right : 180
     },
     {
         sigla : "MS",
@@ -159,8 +159,8 @@ const estados = [
         nordeste : "GO",
         sudeste : "PR",
         sudoeste : null,
-        top : 389, 
-        left : 315
+        top : 385, 
+        right : 325
     },
     {
         sigla : "MT",
@@ -172,8 +172,8 @@ const estados = [
         nordeste : "AM",
         sudeste : "GO",
         sudoeste : null,
-        top : 280, 
-        left : 315
+        top : 310, 
+        right : 340
     },
     {
         sigla : "GO",
@@ -185,8 +185,8 @@ const estados = [
         nordeste : "BA",
         sudeste : "MS",
         sudoeste : "MG",
-        top : 319, 
-        left : 242
+        top : 325, 
+        right : 268
     },
     {
         sigla : "AC",
@@ -198,8 +198,8 @@ const estados = [
         nordeste : "AM",
         sudeste : null,
         sudoeste : null,
-        top : 242,  
-        left : 521
+        top : 280,  
+        right : 520
     },
     {
         sigla : "AM",
@@ -211,8 +211,8 @@ const estados = [
         nordeste : "PA",
         sudeste : "MT",
         sudoeste : "AC",
-        top : 162,  
-        left : 447
+        top : 205,  
+        right : 440
     },
     {
         sigla : "RO",
@@ -224,8 +224,8 @@ const estados = [
         nordeste : "AM",
         sudeste : null,
         sudoeste : "MT",
-        top : 245,  
-        left : 431
+        top : 285,  
+        right : 430
     },
     {
         sigla : "AP",
@@ -237,8 +237,8 @@ const estados = [
         nordeste : null,
         sudeste : "PA",
         sudoeste : "PA",
-        top : 70,   
-        left : 271
+        top : 115,   
+        right : 285
     },
     {
         sigla : "RR",
@@ -250,8 +250,8 @@ const estados = [
         nordeste : null,
         sudeste : "PA",
         sudoeste : "AM",
-        top : 70,  
-        left : 407
+        top : 110,  
+        right : 405
     },
     {
         sigla : "PA",
@@ -263,8 +263,8 @@ const estados = [
         nordeste : "AP",
         sudeste : "MT",
         sudoeste : "TO",
-        top : 163, 
-        left : 293
+        top : 195, 
+        right : 310
     },
     {
         sigla : "TO",
@@ -276,124 +276,124 @@ const estados = [
         nordeste : "PI",
         sudeste : "MT",
         sudoeste : "BA",
-        top : 239,  
-        left : 219
+        top : 270,  
+        right : 255
     },
     {
         sigla : "BA",
-        norte : null,
-        sul : null, 
-        leste : null, 
-        oeste : "MS",
-        noroeste : null,
-        nordeste : null,
-        sudeste : null,
-        sudoeste : null,
-        top : 274,  
-        left : 120 
+        norte : "PE",
+        sul : "MG", 
+        leste : "SE", 
+        oeste : "TO",
+        noroeste : "PI",
+        nordeste : "AL",
+        sudeste : "ES",
+        sudoeste : "GO",
+        top : 295,  
+        right : 180 
     },
     {
         sigla : "SE",
-        norte : null,
-        sul : null, 
+        norte : "AL",
+        sul : "BA", 
         leste : null, 
         oeste : "MS",
         noroeste : null,
         nordeste : null,
         sudeste : null,
-        sudoeste : null,
-        top : 258,  
-        left : 69
+        sudoeste : "BA",
+        top : 290,  
+        right : 115
     },
     {
         sigla : "AL",
-        norte : null,
-        sul : null, 
+        norte : "PE",
+        sul : "SE", 
         leste : null, 
-        oeste : "MS",
+        oeste : "BA",
         noroeste : null,
         nordeste : null,
         sudeste : null,
         sudoeste : null,
-        top : 239,  
-        left : 55
+        top : 275,  
+        right : 95
     },
     {
         sigla : "PB",
-        norte : null,
-        sul : null, 
+        norte : "RN",
+        sul : "PE", 
         leste : null, 
-        oeste : "MS",
-        noroeste : null,
+        oeste : "CE",
+        noroeste : "CE",
         nordeste : null,
         sudeste : null,
-        sudoeste : null,
-        top : 205,  
-        left : 53
+        sudoeste : "PE",
+        top : 234,  
+        right : 105
     },
     {
         sigla : "PE",
-        norte : null,
-        sul : null, 
+        norte : "PB",
+        sul : "AL", 
         leste : null, 
-        oeste : "MS",
-        noroeste : null,
-        nordeste : null,
-        sudeste : null,
-        sudoeste : null,
-        top : 223,  
-        left : 67
+        oeste : "PI",
+        noroeste : "PI",
+        nordeste : "PB",
+        sudeste : "BA",
+        sudoeste : "AL",
+        top : 250,  
+        right : 140
     },
     {
         sigla : "RN",
         norte : null,
-        sul : null, 
+        sul : "PB", 
         leste : null, 
-        oeste : "MS",
-        noroeste : null,
+        oeste : "CE",
+        noroeste : "CE",
         nordeste : null,
-        sudeste : null,
-        sudoeste : null,
-        top : 180,  
-        left : 53
+        sudeste : "PB",
+        sudoeste : "PB",
+        top : 210,  
+        right : 105
     },
     {
         sigla : "CE",
         norte : null,
-        sul : null, 
-        leste : null, 
-        oeste : "MS",
+        sul : "PE", 
+        leste : "RN", 
+        oeste : "PI",
         noroeste : null,
         nordeste : null,
-        sudeste : null,
-        sudoeste : null,
-        top : 172,  
-        left : 94
+        sudeste : "PB",
+        sudoeste : "PI",
+        top : 190,  
+        right : 145
     },
     {
         sigla : "PI",
         norte : null,
-        sul : null, 
-        leste : null, 
-        oeste : "MS",
-        noroeste : null,
-        nordeste : null,
-        sudeste : null,
-        sudoeste : null,
-        top : 202, 
-        left : 138
+        sul : "BA", 
+        leste : "PE", 
+        oeste : "MA",
+        noroeste : "MA",
+        nordeste : "CE",
+        sudeste : "BA",
+        sudoeste : "TO",
+        top : 230, 
+        right : 185
     },
     {
-        sigla : "PI",
+        sigla : "MA",
         norte : null,
-        sul : null, 
-        leste : null, 
-        oeste : "MS",
-        noroeste : null,
+        sul : "TO", 
+        leste : "PI", 
+        oeste : "PA",
+        noroeste : "PA",
         nordeste : null,
-        sudeste : null,
-        sudoeste : null,
-        top : 173,  
-        left : 175
+        sudeste : "PI",
+        sudoeste : "TO",
+        top : 195,  
+        right : 121
     },
 ]
