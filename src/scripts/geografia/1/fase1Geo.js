@@ -12,20 +12,28 @@ input.addEventListener('keypress', (event) => {
 
         switch (valorDigitado){
             case "norte":
+                insereDirecao(valorDigitado);
                 break;
             case "sul":
+                insereDirecao(valorDigitado);
                 break;
             case "leste":
+                insereDirecao(valorDigitado);
                 break;
             case "oeste":
+                insereDirecao(valorDigitado);
                 break;
             case "sudeste":
+                insereDirecao(valorDigitado);
                 break;
             case "sudoeste":
+                insereDirecao(valorDigitado);
                 break;
             case "nordeste":
+                insereDirecao(valorDigitado);
                 break;
             case "noroeste":
+                insereDirecao(valorDigitado);
                 break;
             default:
                 alert("Direção invalida!")
@@ -398,3 +406,8 @@ const estados = [
         right : 121
     },
 ]
+
+function insereDirecao(direcao){
+    let divDirecoes = document.getElementById('direcoes');
+    divDirecoes.innerHTML = `<p class='roboto-regular'>${direcao.toUpperCase()}</p>` + divDirecoes.innerHTML;
+}
