@@ -1,7 +1,4 @@
-let btnNorte = document.getElementById("btn-norte");
-let btnSul = document.getElementById("btn-sul");
-let btnLeste = document.getElementById("btn-leste");
-let btnOeste = document.getElementById("btn-oeste");
+let input = document.getElementById('input');
 
 let capi = {
     posicao : "MS"
@@ -9,26 +6,30 @@ let capi = {
 
 let capiIMG = document.getElementById("capi");
 
-btnNorte.addEventListener('click', () => {
-    let estadoAtual = estados.filter(e => e.sigla == capi.posicao);
-    let proxEstado = estados.filter(e => e.sigla == estadoAtual[0].norte);
+input.addEventListener('keypress', (event) => {
+    if(event.key === 'Enter'){
+        const valorDigitado = input.value.toLowerCase();
 
-    if(estadoAtual[0].norte){
-        capi.posicao = estadoAtual[0].norte;
-        capiIMG.style.top = `${proxEstado[0].top}px`
-        capiIMG.style.right = `${proxEstado[0].right}px`
-    }
-});
-
-btnSul.addEventListener('click', () => {
-    let estadoAtual = estados.filter(e => e.sigla == capi.posicao);
-    let proxEstado = estados.filter(e => e.sigla == estadoAtual[0].sul);
-
-    
-    if(estadoAtual[0].sul){
-        capi.posicao = estadoAtual[0].sul;
-        capiIMG.style.top = `${proxEstado[0].top}px`
-        capiIMG.style.right = `${proxEstado[0].right}px`
+        switch (valorDigitado){
+            case "norte":
+                break;
+            case "sul":
+                break;
+            case "leste":
+                break;
+            case "oeste":
+                break;
+            case "sudeste":
+                break;
+            case "sudoeste":
+                break;
+            case "nordeste":
+                break;
+            case "noroeste":
+                break;
+            default:
+                alert("Direção invalida!")
+        }
     }
 });
 
