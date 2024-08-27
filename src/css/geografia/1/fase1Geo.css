@@ -41,5 +41,8 @@ input{
     width: 650px;
     height: 40px;
     box-shadow: 0px 5px #00000027;
-    outline: 0;
+    outline: 0;    
+    font-size: 25px;
+    padding: 0px 20px;
+    color: #52D5F2;
 }
