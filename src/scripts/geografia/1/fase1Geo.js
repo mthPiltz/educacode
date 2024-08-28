@@ -28,7 +28,7 @@ const estados = [
         norte : "SP",
         sul : "SC",
         leste : null,
-        oeste : null,
+        oeste : "MS",
         top : 432, 
         right : 300
     },
@@ -36,7 +36,7 @@ const estados = [
         sigla : "SP",
         norte : "MG",
         sul : "PR",
-        leste : "RJ",
+        leste : null,
         oeste : "MS",
         top : 403, 
         right : 264
@@ -44,7 +44,7 @@ const estados = [
     {
         sigla : "MG",
         norte : "BA",
-        sul : "MS",
+        sul : "SP",
         leste : "ES",
         oeste : "GO",
         top : 364, 
@@ -71,7 +71,7 @@ const estados = [
     {
         sigla : "MS",
         norte : "MT",
-        sul : "PR",
+        sul : null,
         leste : "SP",
         oeste : null,
         top : 385, 
@@ -116,7 +116,7 @@ const estados = [
     {
         sigla : "RO",
         norte : "AM",
-        sul : "MT", 
+        sul : null, 
         leste : "MT", 
         oeste : "AC",
         top : 285,  
@@ -135,7 +135,7 @@ const estados = [
         sigla : "RR",
         norte : null,
         sul : "AM", 
-        leste : null, 
+        leste : "PA", 
         oeste : null,
         top : 110,  
         right : 405
@@ -144,7 +144,7 @@ const estados = [
         sigla : "PA",
         norte : "AP",
         sul : "MT", 
-        leste : "MA", 
+        leste : "TO", 
         oeste : "AM",
         top : 195, 
         right : 310
@@ -160,7 +160,7 @@ const estados = [
     },
     {
         sigla : "BA",
-        norte : "PE",
+        norte : "PI",
         sul : "MG", 
         leste : "SE", 
         oeste : "TO",
@@ -172,7 +172,7 @@ const estados = [
         norte : "AL",
         sul : "BA", 
         leste : null, 
-        oeste : "MS",
+        oeste : "BA",
         top : 290,  
         right : 115
     },
@@ -225,7 +225,7 @@ const estados = [
         sigla : "PI",
         norte : null,
         sul : "BA", 
-        leste : "PE", 
+        leste : "CE", 
         oeste : "MA",
         top : 230, 
         right : 185
