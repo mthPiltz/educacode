@@ -1,3 +1,40 @@
 .text{
     text-align: center;
 }
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.text-calculo{
+    font-size: 30px;
+}
+
+.quebra-cabecas{
+    display: flex;
+    align-items: end;
+}
+
+.questao{
+    display: flex;
+    align-items: center;
+}
+
+.imagem{
+    margin: 2%;
+}
+
+.numero-questao{
+    color: #FAC51B;
+}
+
+input{
+    height: 40px;
+}
+
+button{
+    border: none;
+    background-color: #fac61b00;
+}
