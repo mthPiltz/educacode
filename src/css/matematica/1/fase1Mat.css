@@ -10,6 +10,7 @@
 
 .text-calculo{
     font-size: 30px;
+    margin: 0;
 }
 
 .quebra-cabecas{
@@ -20,6 +21,8 @@
 .questao{
     display: flex;
     align-items: center;
+    margin: 10px;
+    height: 55.5px;
 }
 
 .imagem{
@@ -32,9 +35,30 @@
 
 input{
     height: 40px;
+    border-radius: 25px;
+    border: 2px solid #0378a638;
+    outline: 0;
+    box-shadow: 0px 5px #00000027;;
+    margin: 10px;
+    font-size: 25px;
+    color: #52D5F2;
+    padding: 0px 20px;
+}
+
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.input-btn{
+    display: flex;
+    justify-content: center;
 }
 
 button{
     border: none;
     background-color: #fac61b00;
+    cursor: pointer;
 }

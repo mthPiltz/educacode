@@ -1,59 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
 
     <div id="header"></div>
 
-    <div
-        class="text">
+    <div class="text">
         <p class="roboto-regular">Responda as questões em binário e revele o quebra cabeça</p>
     </div>
 
     <div class="container">
-        <div>
-            <div class="questao">
-                <p class="roboto-regular text-calculo">
-                    <span class="numero-questao">1.</span> 31- 30 =
-                </p>
-                <input type="text" id="">
-                <button><img src="../../../assets/check.svg" alt="Icone de check"></button>
-            </div>
+        <div class="container">
             <div>
-                <p class="roboto-regular text-calculo">
-                    <span class="numero-questao">2.</span> 2 x 1 =
-                </p>
+                <div class="questao">
+                    <p class="roboto-regular text-calculo">
+                        <span class="numero-questao">1.</span> 31- 30 =
+                    </p>
+                </div>
+                <div class="questao">
+                    <p class="roboto-regular text-calculo">
+                        <span class="numero-questao">2.</span> 2 x 1 =
+                    </p>
+                </div>
+                <div class="questao">
+                    <p class="roboto-regular text-calculo">
+                        <span class="numero-questao">3.</span> 15 / 5 =
+                    </p>
+                </div>
+                <div class="questao">
+                    <p class="roboto-regular text-calculo">
+                        <span class="numero-questao">4.</span> 20 - 16 =
+                    </p>
+                </div>
+                <div class="questao">
+                    <p class="roboto-regular text-calculo">
+                        <span class="numero-questao">5.</span> 9 - 4 =
+                    </p>
+                </div>
+                <div class="questao">
+                    <p class="roboto-regular text-calculo">
+                        <span class="numero-questao">6.</span> 36 / 6 =
+                    </p>
+                </div>
             </div>
-            <div>
-                <p class="roboto-regular text-calculo">
-                    <span class="numero-questao">3.</span> 15 / 5 =
-                </p>
-            </div>
-            <div>
-                <p class="roboto-regular text-calculo">
-                    <span class="numero-questao">4.</span> 20 - 16 =
-                </p>
-            </div>
-            <div>
-                <p class="roboto-regular text-calculo">
-                    <span class="numero-questao">5.</span> 9 - 4 =
-                </p>
-            </div>
-            <div>
-                <p class="roboto-regular text-calculo">
-                    <span class="numero-questao">6.</span> 36 / 6 =
-                </p>
+
+            <div class="inputs" id="test">
+                <div class="input-btn roboto-regular">
+                    <input type="text" id="q1">
+                    <button id="q1btn"><img src="../../../assets/check.svg" alt="Icone de check"></button>
+                </div>
+                <div class="input-btn">
+                    <input type="text" id="q2">
+                    <button id="q2btn"><img src="../../../assets/check.svg" alt="Icone de check"></button>
+                </div>
+                <div class="input-btn">
+                    <input type="text" id="q3">
+                    <button id="q3btn"><img src="../../../assets/check.svg" alt="Icone de check"></button>
+                </div>
+                <div class="input-btn">
+                    <input type="text" id="q4">
+                    <button id="q4btn"><img src="../../../assets/check.svg" alt="Icone de check"></button>
+                </div>
+                <div class="input-btn">
+                    <input type="text" id="q5">
+                    <button id="q5btn"><img src="../../../assets/check.svg" alt="Icone de check"></button>
+                </div>
+                <div class="input-btn">
+                    <input type="text" id="q6">
+                    <button id="q6btn"><img src="../../../assets/check.svg" alt="Icone de check"></button>
+                </div>
+
             </div>
         </div>
 
         <div class="quebra-cabecas">
-            <img 
-                class="imagem"
-                src="../../../assets/quebraCabecas.svg" 
+            <img class="imagem" src="../../../assets/quebraCabecas.svg"
                 alt="Quebra cabeça ilustrativo com o logo do Educacode">
         </div>
     </div>
@@ -63,4 +90,5 @@
     <link rel="stylesheet" href="../../../src/css/matematica/1/fase1Mat.css">
     <script type="module" src="../../../src/scripts/matematica/1/fase1Mat.js"></script>
 </body>
+
 </html>
