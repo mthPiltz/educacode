@@ -1,6 +1,8 @@
 import header from "../../../../tamplates/share/header.js"
-header()
+import modalParabens from "../../../../tamplates/share/modalParabens.js"
 
+header();
+modalParabens();
 
 let btnq1 = document.getElementById('q1btn');
 let btnq2 = document.getElementById('q2btn');
@@ -22,9 +24,12 @@ function check(idbtn){
     let valorCorreto = retornaValorCorreto(idbtn);
 
     if(input.value == valorCorreto){
-        alert("Parabens");
         input.readOnly = true;
         input.disabled = true;
+
+        const modal = document.getElementById("modal");
+        modal.style.display = "block";
+
     }
 }
 
