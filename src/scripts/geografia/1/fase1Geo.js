@@ -1,3 +1,9 @@
+import modalParabens, { abrir } from "../../../../tamplates/share/modalParabens.js"
+import header from "../../../../tamplates/share/header.js"
+
+header();
+modalParabens();
+
 let input = document.getElementById('input');
 
 let capi = {
@@ -315,31 +321,10 @@ input.addEventListener('keypress', (event) => {
                 break;
             default:
                 alert("Direção invalida!")
+
         }
-    }
-});
-
-btnLeste.addEventListener('click', () => {
-    let estadoAtual = estados.filter(e => e.sigla == capi.posicao);
-    let proxEstado = estados.filter(e => e.sigla == estadoAtual[0].leste);
-
-    
-    if(estadoAtual[0].leste){
-        capi.posicao = estadoAtual[0].leste;
-        capiIMG.style.top = `${proxEstado[0].top}px`
-        capiIMG.style.right = `${proxEstado[0].right}px`
-    }
-});
-
-btnOeste.addEventListener('click', () => {
-    let estadoAtual = estados.filter(e => e.sigla == capi.posicao);
-    let proxEstado = estados.filter(e => e.sigla == estadoAtual[0].oeste);
-
-    
-    if(estadoAtual[0].oeste){
-        capi.posicao = estadoAtual[0].oeste;
-        capiIMG.style.top = `${proxEstado[0].top}px`
-        capiIMG.style.right = `${proxEstado[0].right}px`
+        if(capi.posicao == "RR")
+            abrir()
     }
 });
 

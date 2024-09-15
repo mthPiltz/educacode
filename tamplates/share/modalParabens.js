@@ -23,7 +23,11 @@ function close(){
     const modal = document.getElementById("modal");
     
     span.addEventListener('click', () => {
-        console.log("teste");
         modal.style.display = "none";
     });
+}
+
+export function abrir(){
+    const modal = document.getElementById("modal");
+    modal.style.display = "block";
 }
