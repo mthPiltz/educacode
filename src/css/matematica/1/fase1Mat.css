@@ -62,3 +62,45 @@ button{
     background-color: #fac61b00;
     cursor: pointer;
 }
+
+.linha-quebra-cabeca{
+    display: flex;
+}
+
+.pecas{
+    position: absolute;
+}
+
+.peca{
+    position: absolute;
+}
+
+.peca1{
+    top: -254px;
+    left: 7px;
+}
+
+.peca2{
+    top: -254px;
+    left: 124px;
+}
+
+.peca3{
+    left: 204px;
+    top: -254px;
+}
+
+.peca4{
+    top: -176px;
+    left: 7px;
+}
+
+.peca5{
+    top: -137px;
+    left: 87px;
+}
+
+.peca6{
+    top: -175px;
+    left: 241px;
+}

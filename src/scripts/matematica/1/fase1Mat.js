@@ -29,7 +29,7 @@ function check(idbtn){
 
         const modal = document.getElementById("modal");
         modal.style.display = "block";
-
+        removePeca(idbtn);
     }
 }
 
@@ -44,10 +44,16 @@ function retornaValorCorreto(idbtn){
         case 3:
             return "100";
         case 4:
-            return "101;"
+            return "101"
         case 5:
             return "110";
     }
+}
+
+function removePeca(idbtn){
+    const pecas = ["peca1", "peca2", "peca3", "peca4", "peca5", "peca6"]
+    let peca = document.getElementById(`${pecas[idbtn]}`);
+    peca.style.display = 'none';
 }
 
 document.getElementById('q1').addEventListener('keypress', (e) => {
