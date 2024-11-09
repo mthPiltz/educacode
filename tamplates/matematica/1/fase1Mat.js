@@ -1,8 +1,10 @@
 import header from "../../share/header.js"
 import modalParabens from "../../share/modalParabens.js"
+import modalUps from "../../share/upsTenteNovamente.js";
 
 header();
 modalParabens();
+modalUps();
 
 let btnq1 = document.getElementById('q1btn');
 let btnq2 = document.getElementById('q2btn');
@@ -31,6 +33,11 @@ function check(idbtn){
         modal.style.display = "block";
         removePeca(idbtn);
     }
+    else{
+        let modal = document.getElementById("modalUpsCom");
+        modal.style.display = "block";
+        input.value = "";
+    }
 }
 
 function retornaValorCorreto(idbtn){
@@ -57,6 +64,36 @@ function removePeca(idbtn){
 }
 
 document.getElementById('q1').addEventListener('keypress', (e) => {
+    const regex = /^[01]+$/;
+    if(!regex.test(e.key))
+        e.preventDefault();
+});
+
+document.getElementById('q2').addEventListener('keypress', (e) => {
+    const regex = /^[01]+$/;
+    if(!regex.test(e.key))
+        e.preventDefault();
+});
+
+document.getElementById('q3').addEventListener('keypress', (e) => {
+    const regex = /^[01]+$/;
+    if(!regex.test(e.key))
+        e.preventDefault();
+});
+
+document.getElementById('q4').addEventListener('keypress', (e) => {
+    const regex = /^[01]+$/;
+    if(!regex.test(e.key))
+        e.preventDefault();
+});
+
+document.getElementById('q5').addEventListener('keypress', (e) => {
+    const regex = /^[01]+$/;
+    if(!regex.test(e.key))
+        e.preventDefault();
+});
+
+document.getElementById('q6').addEventListener('keypress', (e) => {
     const regex = /^[01]+$/;
     if(!regex.test(e.key))
         e.preventDefault();

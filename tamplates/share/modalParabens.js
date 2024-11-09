@@ -5,7 +5,7 @@ const html = `
         <img
             style="width: 100%;" 
             src="../../../assets/parabens.svg" 
-            alt="Imagem que parabeniza o acerto">
+            alt="Imagem da capi parabenizando o acerto">
     </div>
 </div>
 `;
