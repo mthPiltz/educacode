@@ -1,5 +1,5 @@
-import modalParabens, { abrir } from "../../../../tamplates/share/modalParabens.js"
-import header from "../../../../tamplates/share/header.js"
+import modalParabens, { abrir } from "../../share/modalParabens.js"
+import header from "../../share/header.js"
 
 header();
 modalParabens();

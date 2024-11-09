@@ -1,0 +1,106 @@
+.text{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.text-calculo{
+    font-size: 30px;
+    margin: 0;
+}
+
+.quebra-cabecas{
+    display: flex;
+    align-items: end;
+}
+
+.questao{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    height: 55.5px;
+}
+
+.imagem{
+    margin: 2%;
+}
+
+.numero-questao{
+    color: #FAC51B;
+}
+
+input{
+    height: 40px;
+    border-radius: 25px;
+    border: 2px solid #0378a638;
+    outline: 0;
+    box-shadow: 0px 5px #00000027;;
+    margin: 10px;
+    font-size: 25px;
+    color: #52D5F2;
+    padding: 0px 20px;
+}
+
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.input-btn{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    border: none;
+    background-color: #fac61b00;
+    cursor: pointer;
+}
+
+.linha-quebra-cabeca{
+    display: flex;
+}
+
+.pecas{
+    position: absolute;
+}
+
+.peca{
+    position: absolute;
+}
+
+.peca1{
+    top: -254px;
+    left: 7px;
+}
+
+.peca2{
+    top: -254px;
+    left: 124px;
+}
+
+.peca3{
+    left: 204px;
+    top: -254px;
+}
+
+.peca4{
+    top: -176px;
+    left: 7px;
+}
+
+.peca5{
+    top: -137px;
+    left: 87px;
+}
+
+.peca6{
+    top: -175px;
+    left: 241px;
+}
