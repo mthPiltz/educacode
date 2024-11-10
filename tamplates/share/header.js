@@ -27,6 +27,19 @@ function adicionaAcoes(){
     let img = document.getElementById('voltar');
 
     img.addEventListener('click', () => {
-        window.location.href = '/';
+        let redirec = isRunningOnLocalhost() ? '/' : "/educacode";
+
+        window.location.href = redirec;
     });
+}
+
+function isRunningOnLocalhost() {
+    const hostname = window.location.hostname;
+    
+    return hostname === 'localhost' || 
+           hostname === '127.0.0.1' || 
+           hostname === '[::1]' || 
+           hostname.startsWith('192.168.') || 
+           hostname.startsWith('10.') || 
+           hostname.endsWith('.local');
 }
