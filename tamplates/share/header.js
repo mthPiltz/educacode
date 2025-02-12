@@ -1,15 +1,17 @@
+const path = window.location.host == 'mthpiltz.github.io' ? "/educacode" : ""
+
 const html = `
 <header>
     <div class="header">
-        <img src="/assets/logoEducacode.svg" alt="Logo do Educacode">
+        <img src="` + path + `/assets/logoEducacode.svg" alt="Logo do Educacode">
 
         <div style="display: flex; align-items: center;">
             <img 
-                class="gif" src="/assets/iconeConfiguracoes.gif" 
+                class="gif" src="` + path + `/assets/iconeConfiguracoes.gif" 
                 alt="Icone de configurações">
             <img
                 id="voltar" 
-                src="/assets/sair.png" 
+                src="` + path + `/assets/sair.png" 
                 alt="Icone para voltar" 
                 style="height: 80px; cursor: pointer;">
         </div>
