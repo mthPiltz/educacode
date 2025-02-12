@@ -1,4 +1,4 @@
-import header from "../../share/header.js"
+import header from "/tamplates/share/header.js"
 import modalParabens from "../../share/modalParabens.js"
 import modalUps from "../../share/upsTenteNovamente.js";
 
@@ -98,3 +98,13 @@ document.getElementById('q6').addEventListener('keypress', (e) => {
     if(!regex.test(e.key))
         e.preventDefault();
 });
+
+function isRunningOnLocalhost() {
+    const hostname = window.location.hostname;
+    
+    if(hostname == "mthpiltz.github.io"){
+        return "../..//share/header.js"
+    }
+
+    return "../../share/header.js"
+}
