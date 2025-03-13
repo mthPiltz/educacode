@@ -7,36 +7,6 @@
     right: 325px;
 }
 
-.brasil{
-    position: absolute;
-    right: 75px;
-    top: 95px;
-}
-
-.text{        
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-
-    position: absolute;
-    width: 790px;
-    left: 150px;
-    top: 120px;
-}
-
-input{
-    border: 2px solid #0378a638;    
-    border-radius: 25px;
-    width: 650px;
-    height: 40px;
-    box-shadow: 0px 5px #00000027;
-    outline: 0;    
-    font-size: 25px;
-    padding: 0px 20px;
-    color: #52D5F2;
-}
-
 .direcoes{
     text-align: center;
 }
@@ -45,4 +15,54 @@ input{
     position: absolute;
     left: 900px;
     top: 400px;
+}
+
+/*Daqui para baixo tudo é novo, este comentário serve para
+ demarcar e depois poder apagar o que não precisa da versão antiga*/
+
+ html, 
+ body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    height: 80%;
+}
+
+.area-esquerda{
+    padding: 0 5%;
+    width: 55%;
+    margin: 1%;
+}
+
+.area-direita{
+    width: 45%;
+    margin: 1%;
+
+}
+
+.text{
+    font-size: 35px;
+}
+
+input{
+    border: 2px solid #0378a638;    
+    border-radius: 25px;
+    width: 80%;
+    height: 40px;
+    box-shadow: 0px 5px #00000027;
+    outline: 0;    
+    font-size: 25px;
+    padding: 0px 20px;
+    color: #52D5F2;
+}
+
+@media (max-width: 1000px) {
+    .text{
+        font-size: 25px;
+    }
 }
