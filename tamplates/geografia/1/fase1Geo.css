@@ -11,12 +11,6 @@
     text-align: center;
 }
 
-.imgRosaDosVentos{
-    position: absolute;
-    left: 900px;
-    top: 400px;
-}
-
 /*Daqui para baixo tudo é novo, este comentário serve para
  demarcar e depois poder apagar o que não precisa da versão antiga*/
 
@@ -53,7 +47,7 @@ input{
     border: 2px solid #0378a638;    
     border-radius: 25px;
     width: 80%;
-    height: 40px;
+    height: 10%;
     box-shadow: 0px 5px #00000027;
     outline: 0;    
     font-size: 25px;
@@ -61,8 +55,77 @@ input{
     color: #52D5F2;
 }
 
+.brasil{
+    width: 80%;
+}
+
+.imgRosaDosVentos{
+    position: absolute;
+    left: 55%;
+    top: 63%;
+    height: 30%;
+}
+
 @media (max-width: 1000px) {
     .text{
         font-size: 25px;
+    }
+}
+
+@media(max-width: 1368px) and (max-height: 1024px){
+    .area-esquerda, .area-direita{
+        padding-top: 10%;
+    }
+
+    .imgRosaDosVentos{
+        left: 50%;
+        top: 55%;
+        height: 25%;
+    }
+
+    .brasil{
+        width: 90%;
+    }
+}
+
+@media(max-width: 1180px) and (max-height: 820px) and (min-height: 650px){
+    .area-esquerda, .area-direita{
+        padding-top: 7%;
+    }
+
+    .imgRosaDosVentos{
+        left: 50%;
+        top: 55%;
+        height: 25%;
+    }
+
+    .text{
+        font-size: 23px;
+    }
+
+    input{
+        height: 7%;
+    }
+}
+
+@media (max-width: 900px) or (max-height: 630px) {
+    .text{
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 600px) {
+    .text{
+        font-size: 15px;
+    }
+}
+
+@media(max-height: 430px){
+    .brasil{
+        width: 70%;
+    }
+
+    .area-direita, .area-esquerda{
+        margin-top: 0;
     }
 }

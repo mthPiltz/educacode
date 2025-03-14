@@ -3,7 +3,10 @@ const path = window.location.host == 'mthpiltz.github.io' ? "/educacode" : ""
 const html = `
 <header>
     <div class="header">
-        <img src="` + path + `/assets/logoEducacode.svg" alt="Logo do Educacode">
+        <img
+            class="img-header" 
+            src="` + path + `/assets/logoEducacode.svg" 
+            alt="Logo do Educacode">
 
         <div style="display: flex; align-items: center;">
             <img 
