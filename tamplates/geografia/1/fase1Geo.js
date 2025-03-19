@@ -17,8 +17,8 @@ const estados = [
         sul : null,
         leste : null,
         oeste : null,
-        top : 492,
-        right : 315
+        top : 80,
+        left : 39
     },
     {
         sigla : "SC",
@@ -26,8 +26,8 @@ const estados = [
         sul : "RS",
         leste : null,
         oeste : null,
-        top : 464, 
-        right : 269
+        top : 74, 
+        left : 44
     },
     {
         sigla : "PR",
@@ -35,8 +35,8 @@ const estados = [
         sul : "SC",
         leste : null,
         oeste : "MS",
-        top : 432, 
-        right : 300
+        top : 68, 
+        left : 42
     },
     {
         sigla : "SP",
@@ -44,8 +44,8 @@ const estados = [
         sul : "PR",
         leste : null,
         oeste : "MS",
-        top : 403, 
-        right : 264
+        top : 63, 
+        left : 46
     },
     {
         sigla : "MG",
@@ -53,8 +53,8 @@ const estados = [
         sul : "SP",
         leste : "ES",
         oeste : "GO",
-        top : 364, 
-        right : 215
+        top : 55, 
+        left : 55
     },
     {
         sigla : "ES",
@@ -62,8 +62,8 @@ const estados = [
         sul : "RJ",
         leste : null,
         oeste : "MG",
-        top : 380, 
-        right : 150
+        top : 57, 
+        left : 63
     },
     {
         sigla : "RJ",
@@ -71,8 +71,8 @@ const estados = [
         sul : null,
         leste : null,
         oeste : "MG",
-        top : 423, 
-        right : 180
+        top : 64, 
+        left : 59
     },
     {
         sigla : "MS",
@@ -80,8 +80,8 @@ const estados = [
         sul : null,
         leste : "SP",
         oeste : null,
-        top : 385, 
-        right : 325
+        top : 37, 
+        left : 58
     },
     {
         sigla : "MT",
@@ -89,8 +89,8 @@ const estados = [
         sul : "MS",
         leste : "GO", 
         oeste : "RO",
-        top : 310, 
-        right : 340
+        top : 42, 
+        left : 35
     },
     {
         sigla : "GO",
@@ -98,8 +98,8 @@ const estados = [
         sul : "MG", 
         leste : "MG", 
         oeste : "MT",
-        top : 325, 
-        right : 268
+        top : 45, 
+        left : 48
     },
     {
         sigla : "AC",
@@ -107,8 +107,8 @@ const estados = [
         sul : null, 
         leste : "RO", 
         oeste : null,
-        top : 280,  
-        right : 520
+        top : 37,  
+        left : 7
     },
     {
         sigla : "AM",
@@ -116,8 +116,8 @@ const estados = [
         sul : "RO", 
         leste : "PA", 
         oeste : null,
-        top : 205,  
-        right : 440
+        top : 25,  
+        left : 17
     },
     {
         sigla : "RO",
@@ -125,8 +125,8 @@ const estados = [
         sul : null, 
         leste : "MT", 
         oeste : "AC",
-        top : 285,  
-        right : 430
+        top : 38,  
+        left : 19
     },
     {
         sigla : "AP",
@@ -134,8 +134,8 @@ const estados = [
         sul : "PA", 
         leste : null, 
         oeste : null,
-        top : 115,   
-        right : 285
+        top : 5,   
+        left : 25
     },
     {
         sigla : "RR",
@@ -143,8 +143,8 @@ const estados = [
         sul : "AM", 
         leste : "PA", 
         oeste : null,
-        top : 110,  
-        right : 405
+        top : 5,  
+        left : 42
     },
     {
         sigla : "PA",
@@ -152,8 +152,8 @@ const estados = [
         sul : "MT", 
         leste : "TO", 
         oeste : "AM",
-        top : 195, 
-        right : 310
+        top : 20, 
+        left : 40
     },
     {
         sigla : "TO",
@@ -161,8 +161,8 @@ const estados = [
         sul : "GO", 
         leste : "BA", 
         oeste : "PA",
-        top : 270,  
-        right : 255
+        top : 35,  
+        left : 48
     },
     {
         sigla : "BA",
@@ -171,7 +171,7 @@ const estados = [
         leste : "SE", 
         oeste : "TO",
         top : 295,  
-        right : 180 
+        left : 180 
     },
     {
         sigla : "SE",
@@ -179,8 +179,8 @@ const estados = [
         sul : "BA", 
         leste : null, 
         oeste : "BA",
-        top : 290,  
-        right : 115
+        top : 38,  
+        left : 70
     },
     {
         sigla : "AL",
@@ -188,8 +188,8 @@ const estados = [
         sul : "SE", 
         leste : null, 
         oeste : "BA",
-        top : 275,  
-        right : 95
+        top : 36,  
+        left : 73
     },
     {
         sigla : "PB",
@@ -197,8 +197,8 @@ const estados = [
         sul : "PE", 
         leste : null, 
         oeste : "CE",
-        top : 234,  
-        right : 105
+        top : 29,  
+        left : 75
     },
     {
         sigla : "PE",
@@ -206,8 +206,8 @@ const estados = [
         sul : "AL", 
         leste : null, 
         oeste : "PI",
-        top : 250,  
-        right : 140
+        top : 32,  
+        left : 73
     },
     {
         sigla : "RN",
@@ -215,8 +215,8 @@ const estados = [
         sul : "PB", 
         leste : null, 
         oeste : "CE",
-        top : 210,  
-        right : 105
+        top : 24,  
+        left : 73
     },
     {
         sigla : "CE",
@@ -224,8 +224,8 @@ const estados = [
         sul : "PE", 
         leste : "RN", 
         oeste : "PI",
-        top : 190,  
-        right : 145
+        top : 21,  
+        left : 65
     },
     {
         sigla : "PI",
@@ -233,8 +233,8 @@ const estados = [
         sul : "BA", 
         leste : "CE", 
         oeste : "MA",
-        top : 230, 
-        right : 185
+        top : 29, 
+        left : 59
     },
     {
         sigla : "MA",
@@ -242,8 +242,8 @@ const estados = [
         sul : "TO", 
         leste : "PI", 
         oeste : "PA",
-        top : 195,  
-        right : 121
+        top : 23,  
+        left : 54
     },
 ]
 
