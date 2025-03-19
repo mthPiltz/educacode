@@ -80,8 +80,8 @@ const estados = [
         sul : null,
         leste : "SP",
         oeste : null,
-        top : 37, 
-        left : 58
+        top : 58, 
+        left : 37
     },
     {
         sigla : "MT",
@@ -135,7 +135,7 @@ const estados = [
         leste : null, 
         oeste : null,
         top : 5,   
-        left : 25
+        left : 42
     },
     {
         sigla : "RR",
@@ -144,7 +144,7 @@ const estados = [
         leste : "PA", 
         oeste : null,
         top : 5,  
-        left : 42
+        left : 25
     },
     {
         sigla : "PA",
@@ -262,8 +262,8 @@ input.addEventListener('keypress', (event) => {
                 
                 if(estadoAtual[0].norte){
                     capi.posicao = estadoAtual[0].norte;
-                    capiIMG.style.top = `${proxEstado[0].top}px`
-                    capiIMG.style.right = `${proxEstado[0].right}px`
+                    capiIMG.style.top = `${proxEstado[0].top}%`
+                    capiIMG.style.left = `${proxEstado[0].left}%`
                 }
 
                 break;
@@ -275,8 +275,8 @@ input.addEventListener('keypress', (event) => {
                 
                 if(estadoAtual[0].sul){
                     capi.posicao = estadoAtual[0].sul;
-                    capiIMG.style.top = `${proxEstado[0].top}px`
-                    capiIMG.style.right = `${proxEstado[0].right}px`
+                    capiIMG.style.top = `${proxEstado[0].top}%`
+                    capiIMG.style.left = `${proxEstado[0].left}%`
                 }
 
                 break;
@@ -288,8 +288,8 @@ input.addEventListener('keypress', (event) => {
                 
                 if(estadoAtual[0].leste){
                     capi.posicao = estadoAtual[0].leste;
-                    capiIMG.style.top = `${proxEstado[0].top}px`
-                    capiIMG.style.right = `${proxEstado[0].right}px`
+                    capiIMG.style.top = `${proxEstado[0].top}%`
+                    capiIMG.style.left = `${proxEstado[0].left}%`
                 }
 
                 break;
@@ -301,8 +301,8 @@ input.addEventListener('keypress', (event) => {
                 
                 if(estadoAtual[0].oeste){
                     capi.posicao = estadoAtual[0].oeste;
-                    capiIMG.style.top = `${proxEstado[0].top}px`
-                    capiIMG.style.right = `${proxEstado[0].right}px`
+                    capiIMG.style.top = `${proxEstado[0].top}%`
+                    capiIMG.style.left = `${proxEstado[0].left}%`
                 }
 
                 break;
