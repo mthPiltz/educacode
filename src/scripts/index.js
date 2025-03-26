@@ -10,9 +10,13 @@ async function loadHeader() {
 
 loadHeader();
 
-// const script = document.createElement("script");
-// script.src = `./${headerPath}`;
-// script.type = "module";
-// document.body.appendChild(script);
+let capi = document.getElementById('capi');
+let historia = document.getElementById('historia');
 
-// header();
+capi.addEventListener('mouseover', () => {
+    historia.style.display = 'inline';
+});
+
+capi.addEventListener('mouseout', () => {
+    historia.style.display = 'none';
+});
