@@ -23,6 +23,18 @@
 </div>
 &nbsp;&nbsp;&nbsp;&nbsp;O jogo está em constante desenvolvimento e, em breve, contará com novas fases integrando outras disciplinas, ampliando ainda mais seu potencial interdisciplinar e sua contribuição para a formação de competências digitais.
 
+## Habilidades
+
+As habilidades contempladas na atividade de Matemática dizem respeito ao que o estudante será capaz de compreender ao final do jogo:
+
+- BNCC COMPUTAÇÃO: (EF04C005) Codificar diferentes informações para representação em computador (binária, ASCII, atributos de pixel, como RGB etc.) 
+- (EF05C010) Expressar-se critica e criativamente na compreensão das mudanças tecnológicas no mundo do trabalho e sobre a evolução da sociedade.
+
+Às competências da BNCC Computação para os desafios de geografia, temos: 
+- (EF04C001) Reconhecer objetos do mundo real e/ou digital que podem ser representados através de matrizes que estabelecem uma organização na qual cada componente está em uma posição definida por coordenadas, fazendo manipulações simples sobre estas representações. 
+
+- (EF04C004) Entender que para guardar, manipular e transmitir dados deve-se codificá-los de alguma forma que seja compreendida pela máquina (formato digital).
+
 ## Professora orientadora
 
 - <a href="http://lattes.cnpq.br/1617562138746096">Esteic Janaína Santos Batista</a>
