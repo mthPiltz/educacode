@@ -1,29 +1,25 @@
 const path = window.location.host == 'mthpiltz.github.io' ? "/educacode" : ""
+let cor;
 
-const html = `
-<header>
-    <div class="header">
-        <img
-            class="img-header" 
-            src="` + path + `/assets/logoEducacode.svg" 
-            alt="Logo do Educacode">
-
-        <div style="display: flex; align-items: center;">
-            <img 
-                class="gif" src="` + path + `/assets/iconeConfiguracoes.gif" 
-                alt="Icone de configurações">
+function gerarHtml(cor, path) {
+    return `
+    <header>
+        <div class="header">
             <img
-                id="voltar" 
-                src="` + path + `/assets/sair.png" 
-                alt="Icone para voltar" 
-                style="height: 80px; cursor: pointer;">
-        </div>
-    </div>
-</header>
-`;
+                class="img-header" 
+                src="${path}/assets/logoEducacode.svg" 
+                alt="Logo do Educacode">
 
-export default function header(){
+            <div style="padding: 2%; background-color: ${cor}; height: 30%; width: 100%"></div>
+        </div>
+    </header>
+    `;
+}
+
+export default function header(corDisciplina){
+    cor = corDisciplina;
     let div = document.getElementById("header");
+    const html = gerarHtml(cor, path)
     div.innerHTML = html;
     adicionaAcoes()
 }

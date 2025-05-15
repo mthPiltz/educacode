@@ -1,18 +1,27 @@
 const headerPath = window.location.host == "mthpiltz.github.io" 
                                 ? "educacode/tamplates/share/header.js"
                                 : "tamplates/share/header.js"
+                                
+const cores = [
+    {
+        disciplina: "matematica",
+        cor: "#F0CA19"
+    },
+    {
+        disciplina: "geografia",
+        cor: "#FF3131"
+    }
+];
 
 async function loadHeader() {
     const module = await import(`/${headerPath}`);
-    const header = module.default; // Pega a função exportada como default
-    header(); // Chama a função
+    const header = module.default;
+
+    const disciplina = window.location.pathname.split("/")[2];
+    const cor = cores.filter(x => x.disciplina == disciplina);
+
+    console.log(disciplina);
+    header(cor[0].cor);
 }
 
 loadHeader();
-
-// const script = document.createElement("script");
-// script.src = `./${headerPath}`;
-// script.type = "module";
-// document.body.appendChild(script);
-
-// header();
