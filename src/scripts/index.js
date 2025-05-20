@@ -20,8 +20,10 @@ async function loadHeader() {
     const disciplina = window.location.pathname.split("/")[2];
     const cor = cores.filter(x => x.disciplina == disciplina);
 
-    console.log(disciplina);
-    header(cor[0].cor);
+    if(cor.length > 0)
+        header(cor[0].cor, cor[0].disciplina);
+    else
+        header("", "");
 }
 
 loadHeader();
