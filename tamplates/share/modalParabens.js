@@ -1,6 +1,6 @@
 const html = `
 <div id="modal" class="modal">
-    <div class="modal-content">
+    <div class="modal-parabens-content">
         <span class="close" id="close">&times;</span>
         <img
             style="width: 100%;" 

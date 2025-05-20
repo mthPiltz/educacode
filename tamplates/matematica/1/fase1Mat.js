@@ -2,7 +2,7 @@ import header from "../../share/header.js"
 import modalParabens from "../../share/modalParabens.js"
 import modalUps from "../../share/upsTenteNovamente.js";
 
-header("#F0CA19");
+header("#F0CA19", "matematica");
 modalParabens();
 modalUps();
 

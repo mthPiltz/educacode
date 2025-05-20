@@ -1,6 +1,6 @@
 const html = `
 <div id="modalUpsCom" class="modal">
-    <div class="modal-content">
+    <div class="modal-ups-content">
         <span class="close" id="closeUps">&times;</span>
         <img 
             src="../../../assets/ups.svg" 

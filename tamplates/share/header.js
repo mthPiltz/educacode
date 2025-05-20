@@ -7,7 +7,7 @@ function gerarHtml(cor, path) {
     <div class="header">
         <img
             class="img-header" 
-            src="${path}/assets/logoEducacode.svg" 
+            src="${path}/assets/logoEducacodeV2.svg" 
             alt="Logo do Educacode">
 
         <div style="padding: 15px; background-color: ${cor}; height: 30%; width: 100%">
@@ -44,17 +44,6 @@ export default function header(corDisciplina, disciplina){
         botoes[i].style.fontSize = "20px";
     }
 
-    adicionaAcoes()
-}
-
-function adicionaAcoes(){
-    let img = document.getElementById('voltar');
-
-    img.addEventListener('click', () => {
-        let redirec = isRunningOnLocalhost() ? '/' : "/educacode";
-
-        window.location.href = redirec;
-    });
 }
 
 function isRunningOnLocalhost() {
