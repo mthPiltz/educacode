@@ -27,3 +27,14 @@ async function loadHeader() {
 }
 
 loadHeader();
+
+let capi = document.getElementById('capi');
+let historia = document.getElementById('historia');
+
+capi.addEventListener('mouseover', () => {
+    historia.style.display = 'inline';
+});
+
+capi.addEventListener('mouseout', () => {
+    historia.style.display = 'none';
+});
