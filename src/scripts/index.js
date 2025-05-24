@@ -21,7 +21,9 @@ async function loadHeader() {
     const module = await import(`/${headerPath}`);
     const header = module.default;
 
-    const disciplina = window.location.pathname.split("/")[2];
+    let posicaoPathName = window.location.host == "mthpiltz.github.io" ? 3 : 2;
+
+    const disciplina = window.location.pathname.split("/")[posicaoPathName];
     const cor = cores.filter(x => x.disciplina == disciplina);
 
     if(cor.length > 0)
