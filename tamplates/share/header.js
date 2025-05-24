@@ -10,14 +10,14 @@ function gerarHtml(cor, path) {
             src="${path}/assets/logoEducacodeV2.svg" 
             alt="Logo do Educacode">
 
-        <div style="padding: 15px; background-color: ${cor}; height: 30%; width: 100%">
-            <button class="botao" id="inicio">Inicio</button>
-            <button class="botao" id="geografia">Geografia</button>
-            <button class="botao" id="matematica">Matemática</button>
-            <button class="botao" id="historia">História</button>
-            <button class="botao" id="ciencia">Ciência</button>
-            <button class="botao" id="lingua-portuguesa">Língua portuguesa</button>
-        </div>
+        <nav id="nav" style="padding: 15px; background-color: ${cor}; height: 30%; width: 100%; display: flex;">
+            <a class="botao" id="inicio" href="/${path}">Inicio</a>
+            <a class="botao" id="geografia" href="../../geografia/selecao/selecaoGeografia.html">Geografia</a>
+            <a class="botao" href="../../matematica/selecao/selecaoMatematica.html" id="matematica">Matemática</a>
+            <a class="botao" id="historia">História</a>
+            <a class="botao" id="ciencia">Ciência</a>
+            <a class="botao" href="../../lingua-portuguesa/selecao/selecao-lp.html" id="lingua-portuguesa">Língua portuguesa</a>
+        </nav>
     </div>
 </header>
     `;
@@ -28,10 +28,7 @@ export default function header(corDisciplina, disciplina){
     let div = document.getElementById("header");
     const html = gerarHtml(cor, path)
     div.innerHTML = html;
-
-    let botaoOculto = document.getElementById(disciplina);
-    botaoOculto.style.display =  "none";
-
+    
     let corClara = clarearCor(corDisciplina, 0.5);
     let botoes = document.getElementsByClassName("botao");
     for (let i = 0; i < botoes.length; i++) {
@@ -42,8 +39,25 @@ export default function header(corDisciplina, disciplina){
         botoes[i].style.borderRadius = "50px"
         botoes[i].style.border = "none";
         botoes[i].style.fontSize = "20px";
+        botoes[i].style.display = "flex";
+        botoes[i].style.justifyContent = "center";
+        botoes[i].style.alignItems = "center";
+        botoes[i].style.textDecoration = "none";
+        botoes[i].style.color = "#000";
+        botoes[i].style.fontFamily = "Roboto, sans-serif";
+        botoes[i].style.margin = "0 2px";
     }
+    
+    let botaoOculto = document.getElementById(disciplina);
+    if(botaoOculto)
+        botaoOculto.style.display =  "none";
 
+    const pathname = window.location.pathname;
+    const pathEscondeNav = [`/tamplates/geral/selecaoDisciplina.html`, "/", `/tamplates/geral/selecaoDisciplina.html`, "/educacode"];
+    if(pathEscondeNav.includes(pathname)) {
+        let nav = document.getElementById("nav");
+        nav.style.display = "none";    
+    }
 }
 
 function isRunningOnLocalhost() {
