@@ -1,7 +1,7 @@
 import modalParabens, { abrir } from "../../share/modalParabens.js"
 import header from "../../share/header.js"
 
-header();
+header("#FF3131", "geografia");
 modalParabens();
 
 let input = document.getElementById('input');
@@ -17,7 +17,7 @@ const estados = [
         sul : null,
         leste : null,
         oeste : null,
-        top : 80,
+        top : 84,
         left : 39
     },
     {
@@ -26,8 +26,8 @@ const estados = [
         sul : "RS",
         leste : null,
         oeste : null,
-        top : 74, 
-        left : 44
+        top : 78, 
+        left : 48
     },
     {
         sigla : "PR",
@@ -35,7 +35,7 @@ const estados = [
         sul : "SC",
         leste : null,
         oeste : "MS",
-        top : 68, 
+        top : 72, 
         left : 42
     },
     {
@@ -44,8 +44,8 @@ const estados = [
         sul : "PR",
         leste : null,
         oeste : "MS",
-        top : 63, 
-        left : 46
+        top : 66, 
+        left : 48
     },
     {
         sigla : "MG",
@@ -53,8 +53,8 @@ const estados = [
         sul : "SP",
         leste : "ES",
         oeste : "GO",
-        top : 55, 
-        left : 55
+        top : 57, 
+        left : 57
     },
     {
         sigla : "ES",
@@ -62,8 +62,8 @@ const estados = [
         sul : "RJ",
         leste : null,
         oeste : "MG",
-        top : 57, 
-        left : 63
+        top : 61, 
+        left : 67
     },
     {
         sigla : "RJ",
@@ -71,8 +71,8 @@ const estados = [
         sul : null,
         leste : null,
         oeste : "MG",
-        top : 64, 
-        left : 59
+        top : 68, 
+        left : 63
     },
     {
         sigla : "MS",
@@ -80,7 +80,7 @@ const estados = [
         sul : null,
         leste : "SP",
         oeste : null,
-        top : 58, 
+        top : 62, 
         left : 37
     },
     {
@@ -98,8 +98,8 @@ const estados = [
         sul : "MG", 
         leste : "MG", 
         oeste : "MT",
-        top : 45, 
-        left : 48
+        top : 53, 
+        left : 46
     },
     {
         sigla : "AC",
@@ -134,7 +134,7 @@ const estados = [
         sul : "PA", 
         leste : null, 
         oeste : null,
-        top : 5,   
+        top : 9,   
         left : 42
     },
     {
@@ -143,7 +143,7 @@ const estados = [
         sul : "AM", 
         leste : "PA", 
         oeste : null,
-        top : 5,  
+        top : 7,  
         left : 25
     },
     {
@@ -152,7 +152,7 @@ const estados = [
         sul : "MT", 
         leste : "TO", 
         oeste : "AM",
-        top : 20, 
+        top : 25, 
         left : 40
     },
     {
@@ -161,8 +161,8 @@ const estados = [
         sul : "GO", 
         leste : "BA", 
         oeste : "PA",
-        top : 35,  
-        left : 48
+        top : 38,  
+        left : 49
     },
     {
         sigla : "BA",
@@ -170,8 +170,8 @@ const estados = [
         sul : "MG", 
         leste : "SE", 
         oeste : "TO",
-        top : 295,  
-        left : 180 
+        top : 43,  
+        left : 63 
     },
     {
         sigla : "SE",
@@ -179,8 +179,8 @@ const estados = [
         sul : "BA", 
         leste : null, 
         oeste : "BA",
-        top : 38,  
-        left : 70
+        top : 41,  
+        left : 73
     },
     {
         sigla : "AL",
@@ -197,8 +197,8 @@ const estados = [
         sul : "PE", 
         leste : null, 
         oeste : "CE",
-        top : 29,  
-        left : 75
+        top : 31,  
+        left : 77
     },
     {
         sigla : "PE",
@@ -206,8 +206,8 @@ const estados = [
         sul : "AL", 
         leste : null, 
         oeste : "PI",
-        top : 32,  
-        left : 73
+        top : 34,  
+        left : 75
     },
     {
         sigla : "RN",
@@ -224,8 +224,8 @@ const estados = [
         sul : "PE", 
         leste : "RN", 
         oeste : "PI",
-        top : 21,  
-        left : 65
+        top : 24,  
+        left : 68
     },
     {
         sigla : "PI",
@@ -233,8 +233,8 @@ const estados = [
         sul : "BA", 
         leste : "CE", 
         oeste : "MA",
-        top : 29, 
-        left : 59
+        top : 32, 
+        left : 61
     },
     {
         sigla : "MA",
@@ -243,7 +243,7 @@ const estados = [
         leste : "PI", 
         oeste : "PA",
         top : 23,  
-        left : 54
+        left : 56
     },
 ]
 
