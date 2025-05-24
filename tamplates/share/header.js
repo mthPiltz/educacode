@@ -53,7 +53,7 @@ export default function header(corDisciplina, disciplina){
         botaoOculto.style.display =  "none";
 
     const pathname = window.location.pathname;
-    const pathEscondeNav = [`/tamplates/geral/selecaoDisciplina.html`, "/", `/tamplates/geral/selecaoDisciplina.html`, "/educacode"];
+    const pathEscondeNav = [`/tamplates/geral/selecaoDisciplina.html`, "/", `/educacode/tamplates/geral/selecaoDisciplina.html`, "/educacode/"];
     if(pathEscondeNav.includes(pathname)) {
         let nav = document.getElementById("nav");
         nav.style.display = "none";    
