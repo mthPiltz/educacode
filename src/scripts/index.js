@@ -10,6 +10,10 @@ const cores = [
     {
         disciplina: "geografia",
         cor: "#FF3131"
+    },
+    {
+        disciplina: "lingua-portuguesa",
+        cor: "#00AFEF"
     }
 ];
 
