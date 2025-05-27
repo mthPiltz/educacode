@@ -1,0 +1,24 @@
+input{
+    height: 40px;
+    width: 35px;
+    border-radius: 25px;
+    border: 2px solid #0378a638;
+    outline: 0;
+    box-shadow: 0px 5px #00000027;
+    font-size: 25px;
+    color: #52D5F2;
+    padding: 0px 10px;
+}
+
+button{
+    border: none;
+}
+
+.letras{
+    margin: 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    font-family: roboto;
+}

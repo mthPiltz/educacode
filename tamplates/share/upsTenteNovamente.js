@@ -6,7 +6,7 @@ const html = `
             src="../../../assets/ups.svg" 
             alt="Imagem da capi informando o erro">
         <div style="width: 100%; display: flex; justify-content: center; margin-top: 5px;">
-            <button id='btnReload'>
+            <button style="background-color: #fff;" id='btnReload'>
                 <img 
                     src="../../../assets/reload.svg" 
                     alt="Botão para refazer ação">

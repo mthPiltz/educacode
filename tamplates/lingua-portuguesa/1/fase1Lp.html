@@ -6,10 +6,119 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="header"></div>
 
-    <div style="width: 10%;position: absolute; bottom: 0;">
-        <img src="../../../assets/logo-logo-lp.svg" alt="Logo matematica">
+    <div style="display: flex; justify-content: space-around;">
+        <div style="display: flex; flex-direction: column; width: 45%;">
+            <div style="display: flex; align-items: center; margin: 5% 0;">
+                <div style="display: flex; width: 100%;">
+                    <div class="letras">
+                        <span class="roboto-regular">M</span>
+                        <input type="text" autocomplete="off" maxlength="2" id="palavra1m">
+                    </div>
+                    <div class="letras">
+                        <span class="roboto-regular">A</span>
+                        <input type="text" autocomplete="off" maxlength="2" id="palavra1a1">
+                    </div>
+                    <div class="letras">
+                        <span class="roboto-regular">N</span>
+                        <input type="text" autocomplete="off" maxlength="2" id="palavra1n">
+                    </div>
+                    <div class="letras">
+                        <span class="roboto-regular">G</span>
+                        <input type="text" autocomplete="off" maxlength="2" id="palavra1g">
+                    </div>
+                    <div class="letras">
+                        <span class="roboto-regular">A</span>
+                        <input type="text" autocomplete="off" maxlength="2" id="palavra1a2">
+                    </div>
+                </div>
+                <div>
+                    <button style="background-color: #fff; cursor: pointer" id="btn-palavra1">
+                        <img src="../../../assets/check-azul.svg" alt="Icone de check">
+                    </button>
+                </div>
+            </div>
+
+            <div style="display: flex; align-items: center; margin: 5% 0;">
+                <div style="display: flex; width: 100%;">
+                    <div class="letras">
+                        <span class="roboto-regular">V</span>
+                        <input type="text" autocomplete="off" maxlength="2" id="palavra2v">
+                    </div>
+                    <div class="letras">
+                        <span class="roboto-regular">E</span>
+                        <input type="text" autocomplete="off" maxlength="2" id="palavra2e">
+                    </div>
+                    <div class="letras">
+                        <span class="roboto-regular">N</span>
+                        <input type="text" autocomplete="off" maxlength="2" id="palavra2n">
+                    </div>
+                    <div class="letras">
+                        <span class="roboto-regular">D</span>
+                        <input type="text" autocomplete="off" maxlength="2" id="palavra2d">
+                    </div>
+                    <div class="letras">
+                        <span class="roboto-regular">O</span>
+                        <input type="text" autocomplete="off" maxlength="2" id="palavra2o">
+                    </div>
+                </div>
+                <div>
+                    <button style="background-color: #fff; cursor: pointer" id="btn-palavra2">
+                        <img src="../../../assets/check-azul.svg" alt="Icone de check">
+                    </button>
+                </div>
+            </div>
+
+            <div style="display: flex; align-items: center; margin: 5% 0;">
+                <div style="display: flex; width: 100%;">
+                    <div class="letras">
+                        <span class="roboto-regular">B</span>
+                        <input type="text" autocomplete="off" maxlength="2" id="palavra3b">
+                    </div>
+                    <div class="letras">
+                        <span class="roboto-regular">A</span>
+                        <input type="text" autocomplete="off" maxlength="2" id="palavra3a">
+                    </div>
+                    <div class="letras">
+                        <span class="roboto-regular">N</span>
+                        <input type="text" autocomplete="off" maxlength="2" id="palavra3n">
+                    </div>
+                    <div class="letras">
+                        <span class="roboto-regular">C</span>
+                        <input type="text" autocomplete="off" maxlength="2" id="palavra3c">
+                    </div>
+                    <div class="letras">
+                        <span class="roboto-regular">O</span>
+                        <input type="text" autocomplete="off" maxlength="2" id="palavra3o">
+                    </div>
+                </div>
+                <div>
+                    <button style="background-color: #fff; cursor: pointer" id="btn-palavra3">
+                        <img src="../../../assets/check-azul.svg" alt="Icone de check">
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div style="width: 45%; display: flex;justify-content: center; flex-direction: column; align-items: center;">
+            <span class="letras" style="font-weight: bold; font-size: 30px; margin-bottom: 2%;">Tabela ASCII</span>
+            <img src="../../../assets/tabela-ascii.svg" />
+        </div>
+
+        
     </div>
     
+    <div style="width: 10%;position: absolute; bottom: 0;">
+        <img src="../../../assets/logo-lp.svg" alt="Logo lingua portuguesa">
+    </div>
+
+    <div id="modalParabens"></div>
+    <div id="modalUps"></div>
+    
+    <link rel="stylesheet" href="../../../src/css/base.css">
+    <link rel="stylesheet" href="fase1Lp.css">
+    <script type="module" src="fase1Lp.js"></script>
 </body>
 </html>

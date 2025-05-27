@@ -4,7 +4,7 @@ let cor;
 function gerarHtml(cor, path) {
     return `
 <header>
-    <div class="header">
+    <div class="header" style="display: flex;">
         <img
             class="img-header" 
             src="${path}/assets/logoEducacodeV2.svg" 
