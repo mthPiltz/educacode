@@ -11,11 +11,11 @@ function gerarHtml(cor, path) {
             alt="Logo do Educacode">
 
         <nav id="nav" style="padding: 15px; background-color: ${cor}; height: 30%; width: 100%; display: flex;">
-            <a class="botao" id="inicio" href="${path}">Inicio</a>
+            <a class="botao" id="inicio" href="${path == "" ? "/" : path}">Inicio</a>
             <a class="botao" id="geografia" href="../../geografia/selecao/selecaoGeografia.html">Geografia</a>
             <a class="botao" href="../../matematica/selecao/selecaoMatematica.html" id="matematica">Matemática</a>
-            <a class="botao" id="historia">História</a>
-            <a class="botao" id="ciencia">Ciência</a>
+            <a style="display: none;" id="historia">História</a>
+            <a style="display: none;" id="ciencia">Ciência</a>
             <a class="botao" href="../../lingua-portuguesa/selecao/selecao-lp.html" id="lingua-portuguesa">Língua portuguesa</a>
         </nav>
     </div>
