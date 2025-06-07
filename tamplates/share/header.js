@@ -12,11 +12,11 @@ function gerarHtml(cor, path) {
 
         <nav id="nav" style="padding: 15px; background-color: ${cor}; height: 30%; width: 100%; display: flex;">
             <a class="botao" id="inicio" href="${path == "" ? "/" : path}">Inicio</a>
-            <a class="botao" id="geografia" href="../../geografia/selecao/selecaoGeografia.html">Geografia</a>
-            <a class="botao" href="../../matematica/selecao/selecaoMatematica.html" id="matematica">Matemática</a>
+            <a class="botao" style="background-color: #ff9898;" id="geografia" href="../../geografia/selecao/selecaoGeografia.html">Geografia</a>
+            <a class="botao" style="background-color: #f8e58c;" href="../../matematica/selecao/selecaoMatematica.html" id="matematica">Matemática</a>
             <a style="display: none;" id="historia">História</a>
             <a style="display: none;" id="ciencia">Ciência</a>
-            <a class="botao" href="../../lingua-portuguesa/selecao/selecao-lp.html" id="lingua-portuguesa">Língua portuguesa</a>
+            <a class="botao" style="background-color: #80d7f7" href="../../lingua-portuguesa/selecao/selecao-lp.html" id="lingua-portuguesa">Língua portuguesa</a>
         </nav>
     </div>
 </header>
@@ -32,7 +32,9 @@ export default function header(corDisciplina, disciplina){
     let corClara = clarearCor(corDisciplina, 0.5);
     let botoes = document.getElementsByClassName("botao");
     for (let i = 0; i < botoes.length; i++) {
-        botoes[i].style.backgroundColor = corClara;
+        if(i == 0) 
+            botoes[i].style.backgroundColor = corClara;
+        
         botoes[i].style.width = "200px"
         
         botoes[i].style.height = "40px"

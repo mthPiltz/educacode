@@ -6,3 +6,10 @@
     width: 865px;
     text-align: center;
 }
+
+@media (max-width: 880px) {
+    .disciplinas {
+        display: flex;
+        flex-direction: column;
+    }
+}

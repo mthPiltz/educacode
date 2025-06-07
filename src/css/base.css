@@ -66,8 +66,32 @@
     text-decoration: none;
 }
 
-@media (max-height: 450px) {
+.jogar{
+    width: 40%;
+}
+
+.capivara{
+    width: 20%;
+}
+
+@media (max-height: 500px) or (max-width: 500px) {
     .img-header{
         width: 15%;
+    }
+}
+
+@media (max-height: 420px){
+    .header{
+        height: 100px;
+    }
+
+    .img-header{
+        width: 100px;
+    }
+
+    .botao{
+        width: 80px;
+        height: 100px;
+        font-size: 20px;
     }
 }
