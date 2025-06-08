@@ -328,9 +328,11 @@ input.addEventListener('keypress', (event) => {
     }
 });
 
+let numeroDirecao = 0;
 
 function insereDirecao(direcao){
+    numeroDirecao++;
     input.value = '';
     let divDirecoes = document.getElementById('direcoes');
-    divDirecoes.innerHTML = `<p class='roboto-regular'>${direcao.toUpperCase()}</p>` + divDirecoes.innerHTML;
+    divDirecoes.innerHTML = divDirecoes.innerHTML + `<p class='roboto-regular'><span style="font-size: 20px;">${numeroDirecao}º</span> ${direcao.toUpperCase()}</p>`;
 }

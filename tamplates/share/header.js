@@ -16,7 +16,7 @@ function gerarHtml(cor, path) {
             <a class="botao" style="background-color: #f8e58c;" href="../../matematica/1/fase1Mat.html" id="matematica">Matemática</a>
             <a style="display: none;" id="historia">História</a>
             <a style="display: none;" id="ciencia">Ciência</a>
-            <a class="botao" style="background-color: #80d7f7" href="../../lingua-portuguesa/1/fase1LP.html" id="lingua-portuguesa">Língua portuguesa</a>
+            <a class="botao" style="background-color: #80d7f7" href="../../lingua-portuguesa/1/fase1Lp.html" id="lingua-portuguesa">Língua portuguesa</a>
         </nav>
     </div>
 </header>

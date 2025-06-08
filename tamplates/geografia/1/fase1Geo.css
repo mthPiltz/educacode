@@ -1,5 +1,7 @@
 .direcoes{
     text-align: center;
+    max-height: 50%;
+    overflow: auto;
 }
 
 /*Daqui para baixo tudo é novo, este comentário serve para
@@ -43,7 +45,7 @@ input{
     outline: 0;    
     font-size: 25px;
     padding: 0px 20px;
-    color: #52D5F2;
+    /* color: #52D5F2; */
 }
 
 .brasil{

@@ -2,12 +2,14 @@ const html = `
 <div id="modalUpsCom" class="modal">
     <div class="modal-ups-content">
         <span class="close" id="closeUps">&times;</span>
-        <img 
+        <img
+            style="width: 100%;"  
             src="../../../assets/ups.svg" 
             alt="Imagem da capi informando o erro">
         <div style="width: 100%; display: flex; justify-content: center; margin-top: 5px;">
             <button style="background-color: #fff;" id='btnReload'>
                 <img 
+                    style="width: 100%;"
                     src="../../../assets/reload.svg" 
                     alt="Botão para refazer ação">
             </button>
