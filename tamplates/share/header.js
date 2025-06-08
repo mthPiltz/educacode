@@ -12,11 +12,11 @@ function gerarHtml(cor, path) {
 
         <nav id="nav" style="padding: 15px; background-color: ${cor}; height: 30%; width: 100%; display: flex;">
             <a class="botao" id="inicio" href="${path == "" ? "/" : path}">Inicio</a>
-            <a class="botao" style="background-color: #ff9898;" id="geografia" href="../../geografia/selecao/selecaoGeografia.html">Geografia</a>
-            <a class="botao" style="background-color: #f8e58c;" href="../../matematica/selecao/selecaoMatematica.html" id="matematica">Matemática</a>
+            <a class="botao" style="background-color: #ff9898;" id="geografia" href="../../geografia/1/fase1Geo.html">Geografia</a>
+            <a class="botao" style="background-color: #f8e58c;" href="../../matematica/1/fase1Mat.html" id="matematica">Matemática</a>
             <a style="display: none;" id="historia">História</a>
             <a style="display: none;" id="ciencia">Ciência</a>
-            <a class="botao" style="background-color: #80d7f7" href="../../lingua-portuguesa/selecao/selecao-lp.html" id="lingua-portuguesa">Língua portuguesa</a>
+            <a class="botao" style="background-color: #80d7f7" href="../../lingua-portuguesa/1/fase1LP.html" id="lingua-portuguesa">Língua portuguesa</a>
         </nav>
     </div>
 </header>
