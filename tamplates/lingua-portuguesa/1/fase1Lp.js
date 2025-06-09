@@ -11,6 +11,23 @@ let palavrasCompletas = [0,0,0];
 let btn1 = document.getElementById("btn-palavra1");
 let btn2 = document.getElementById("btn-palavra2");
 let btn3 = document.getElementById("btn-palavra3");
+let inputLetras = document.getElementsByClassName('input-letra');
+
+for(let i = 0; i < inputLetras.length; i++) {
+    inputLetras[i].addEventListener("keypress", (event) => {
+        const regex = /[^0-9]/g;
+        if(regex.test(event.key))
+            event.preventDefault();
+    });
+}
+
+// inputLetras.forEach(e => {
+//     e.addEventListener("keypress", (event) => {
+//         const regex = /^[0-9]+$/;
+//         if(!regex.test(e.key))
+//             e.preventDefault();
+//     })
+// });
 
 btn1.addEventListener("click", () => {
     if(palavrasCompletas[0] == 1) {
